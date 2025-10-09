@@ -1,0 +1,166 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    
+    /* --- NEW BACKGROUND STYLES --- */
+    background-image: url('/static/doctor.png'); /* The path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background still when scrolling */
+    
+    /* This adds a white, semi-transparent layer over the image to lighten it */
+    background-color: rgba(255, 255, 255, 0.85); 
+    background-blend-mode: lighten;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-top: 50px; /* Added margin top */
+}
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #5f6368;
+    margin-bottom: 25px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #185abc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+    background-color: #9e9e9e;
+    cursor: not-allowed;
+}
+
+/* --- NEW STYLES FOR RESULTS --- */
+#results-container {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    text-align: left;
+    white-space: pre-wrap;
+    line-height: 1.7;
+    border-left: 4px solid #1a73e8;
+}
+
+#results-container strong {
+    font-weight: 700; /* Bolder text */
+    color: #185abc;   /* Darker blue for emphasis */
+}
+
+.loading {
+    color: #5f6368;
+}
+
+.error {
+    color: #d93025;
+    font-weight: 500;
+}
+/* --- NEW STYLE FOR THE DISCLAIMER --- */
+.disclaimer {
+    font-weight: 500; /* A nice "semi-bold" font weight */
+    color: #c5221f;   /* A dark red color for the text */
+    background-color: #fce8e6; /* A light red background */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px; /* Adds some space below the disclaimer */
+    line-height: 1.6;
+}
+/* --- NEW STYLES FOR SEVERITY INDICATORS --- */
+.indicator {
+    display: inline-flex; /* Use flexbox for alignment */
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.indicator .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%; /* Makes the icon a circle */
+    margin-right: 8px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 16px; /* Vertically centers the "!" */
+}
+
+.indicator.mild {
+    background-color: #e6f4ea;
+    color: #34a853;
+}
+.indicator.mild .icon {
+    background-color: #34a853;
+}
+
+.indicator.moderate {
+    background-color: #feefc3;
+    color: #f9ab00;
+}
+.indicator.moderate .icon {
+    background-color: #f9ab00;
+}
+
+.indicator.serious {
+    background-color: #fce8e6;
+    color: #d93025;
+}
+.indicator.serious .icon {
+    background-color: #d93025;
+}
