@@ -1,12 +1,11 @@
 # 🩺 Healthcare Symptom Checker AI
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
-
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green?logo=fastapi&logoColor=white)
+![Generative AI](https://img.shields.io/badge/Generative_AI-LLM-purple.svg)
 
-A web application that takes user-reported symptoms and leverages Google's Gemini AI to suggest potential conditions and recommended next steps for educational purposes.
+A web application that takes user-reported symptoms and leverages a Large Language Model (LLM) to suggest potential conditions and recommended next steps for educational purposes.
 
 ---
 
@@ -21,7 +20,7 @@ This is a demonstration of the final application in action. The user enters thei
 
 ## 📖 About The Project
 
-This project is a full-stack web application built with a Python FastAPI backend and a vanilla HTML, CSS, and JavaScript frontend. It serves as an educational tool to demonstrate the power of Large Language Models (LLMs) in processing natural language to provide structured, informational responses. User queries and AI responses are logged in an SQLite database.
+This project is a full-stack web application built with a Python FastAPI backend and a vanilla HTML, CSS, and JavaScript frontend. It serves as an educational tool to demonstrate the power of LLMs in processing natural language to provide structured, informational responses. User queries and AI responses are logged in an SQLite database.
 
 **This application is for informational and educational purposes only and is not a substitute for professional medical advice.**
 
@@ -30,7 +29,7 @@ This project is a full-stack web application built with a Python FastAPI backend
 ## 🚀 Features
 
 - **Intuitive Web Interface:** A clean and simple UI for users to enter their symptoms.
-- **AI-Powered Analysis:** Utilizes the Google Gemini model to understand symptoms and provide relevant information.
+- **AI-Powered Analysis:** Utilizes a powerful LLM to understand symptoms and provide relevant information.
 - **Structured Responses:** The AI is prompted to return potential conditions with explanations, severity tags, and safe next steps.
 - **Dynamic Frontend:** The UI handles loading states, errors, and formats the AI's response beautifully.
 - **Query Logging:** All interactions are saved to an SQLite database for potential future analysis.
@@ -41,7 +40,7 @@ This project is a full-stack web application built with a Python FastAPI backend
 
 - **Backend:** Python, FastAPI, Uvicorn, Gunicorn
 - **Database:** SQLAlchemy, SQLite
-- **AI Model:** Google Gemini
+- **AI Model:** Generative AI (LLM)
 - **Frontend:** HTML5, CSS3, JavaScript (ES6)
 - **Deployment:** Render
 
@@ -75,7 +74,7 @@ To get a local copy up and running, follow these simple steps.
 
 4.  **Set up your environment variables:**
     - Create a file named `.env` in the root of the project.
-    - Add your Google Gemini API key to this file:
+    - Add your secret API key to this file:
       ```
       GOOGLE_API_KEY="YOUR_API_KEY_HERE"
       ```
