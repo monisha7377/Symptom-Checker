@@ -1,0 +1,8 @@
+venv/
+
+# Environment variables
+.env
+
+# Other files to ignore
+__pycache__/
+symptom_checker.db
