@@ -13,8 +13,7 @@ A web application that takes user-reported symptoms and leverages a Large Langua
 
 This is a demonstration of the final application in action. The user enters their symptoms, and the AI provides a formatted, helpful response.
 
-![Symptom Checker Demo](demo.gif)
-
+https://drive.google.com/file/d/1cElpLwbxnNdwe4e8ySgTe6NDcdWtFsA4/view?usp=sharing
 
 ---
 
